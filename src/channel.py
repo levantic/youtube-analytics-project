@@ -9,8 +9,8 @@ import json
 #from helper.youtube_api_manual import printj
 from googleapiclient.discovery import build
 
-# YT_API_KEY скопирован из гугла и вставлен в переменные окружения
-api_key: str = 'AIzaSyCED6SCagD1Z3aCrHuM6XxWu2BA0jDRUG8'
+# YT_API_KEY скопирован из гугла и вставлен в переменные окруженияapi_key: str = 'AIzaSyCED6SCagD1Z3aCrHuM6XxWu2BA0jDRUG8'
+api_key: str = os.getenv('YOUTUBE_API_KEY')
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Python\youtube-api-445222-6abe3d21edc9.json"
 #os.getenv('YOUTUBE_API_KEY')
 
